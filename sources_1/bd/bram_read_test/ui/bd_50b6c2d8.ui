@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.87",
+   "Default View_TopLeft":"-132,1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port port-id_en -pg 1 -lvl 0 -x -10 -y 40 -defaultsOSRD
+preplace port port-id_valid -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD -left
+preplace portBus data_out -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD -left
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 460 -y 180 -defaultsOSRD
+preplace inst bram_reader_0 -pg 1 -lvl 1 -x 170 -y 180 -defaultsOSRD -orient R180
+preplace netloc blk_mem_gen_0_douta 1 1 1 340 120n
+preplace netloc bram_reader_0_bram_addr_in 1 1 1 330 160n
+preplace netloc bram_reader_0_bram_en 1 1 1 N 220
+preplace netloc bram_reader_0_data_o 1 0 1 NJ 190
+preplace netloc bram_reader_0_valid_o 1 0 1 NJ 170
+preplace netloc clk_1 1 0 2 NJ 20 350
+preplace netloc en_1 1 0 2 NJ 40 330
+preplace netloc rst_1 1 0 2 NJ 60 320
+levelinfo -pg 1 -10 170 460 570
+pagesize -pg 1 -db -bbox -sgen -150 0 570 320
+"
+}
+0

@@ -1,0 +1,635 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1CE7BF8B7C51C213",
+      "device": "xck26-sfvc784-2LV-c",
+      "gen_directory": "../../../../overall_dataflow.gen/sources_1/bd/test_read_4bram",
+      "name": "test_read_4bram",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "blk_mem_gen_1": "",
+      "blk_mem_gen_2": "",
+      "blk_mem_gen_3": "",
+      "blk_mem_gen_4": "",
+      "fish_box_core_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "dbg_bram_data": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "dbg_bram_rd_valid": {
+        "direction": "O"
+      },
+      "dbg_bram_rd_data": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "dbg_bram_en": {
+        "direction": "O"
+      },
+      "dbg_bram_addr": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "control_signal": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "status_signal": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "test_read_4bram_blk_mem_gen_0_0",
+        "xci_path": "ip\\test_read_4bram_blk_mem_gen_0_0\\test_read_4bram_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "data_bram_0.coe"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "test_read_4bram_blk_mem_gen_0_1",
+        "xci_path": "ip\\test_read_4bram_blk_mem_gen_0_1\\test_read_4bram_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "blk_mem_gen_1",
+        "parameters": {
+          "Coe_File": {
+            "value": "data_bram_1.coe"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_2": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "test_read_4bram_blk_mem_gen_0_2",
+        "xci_path": "ip\\test_read_4bram_blk_mem_gen_0_2\\test_read_4bram_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "blk_mem_gen_2",
+        "parameters": {
+          "Coe_File": {
+            "value": "data_bram_2.coe"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_3": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "test_read_4bram_blk_mem_gen_0_3",
+        "xci_path": "ip\\test_read_4bram_blk_mem_gen_0_3\\test_read_4bram_blk_mem_gen_0_3.xci",
+        "inst_hier_path": "blk_mem_gen_3",
+        "parameters": {
+          "Coe_File": {
+            "value": "data_bram_3.coe"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "blk_mem_gen_4": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "test_read_4bram_blk_mem_gen_3_0",
+        "xci_path": "ip\\test_read_4bram_blk_mem_gen_3_0\\test_read_4bram_blk_mem_gen_3_0.xci",
+        "inst_hier_path": "blk_mem_gen_4",
+        "parameters": {
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "fish_box_core_0": {
+        "vlnv": "xilinx.com:module_ref:fish_box_core:1.0",
+        "xci_name": "test_read_4bram_fish_box_core_0_0",
+        "xci_path": "ip\\test_read_4bram_fish_box_core_0_0\\test_read_4bram_fish_box_core_0_0.xci",
+        "inst_hier_path": "fish_box_core_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fish_box_core",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "DATA_BRAM_PORT_0": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+            "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+            "parameters": {
+              "MASTER_TYPE": {
+                "value": "BRAM_CTRL",
+                "value_src": "constant"
+              },
+              "MEM_ECC": {
+                "value": "NONE",
+                "value_src": "constant"
+              },
+              "MEM_WIDTH": {
+                "value": "32",
+                "value_src": "constant"
+              },
+              "MEM_SIZE": {
+                "value": "32768",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en_0",
+                "direction": "O"
+              },
+              "DOUT": {
+                "physical_name": "bram_dout_0",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "DIN": {
+                "physical_name": "bram_din_0",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "WE": {
+                "physical_name": "bram_we_0",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr_0",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "CLK": {
+                "physical_name": "bram_clk_0",
+                "direction": "O"
+              },
+              "RST": {
+                "physical_name": "bram_rst_0",
+                "direction": "O"
+              }
+            }
+          },
+          "DATA_BRAM_PORT_1": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+            "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+            "parameters": {
+              "MASTER_TYPE": {
+                "value": "BRAM_CTRL",
+                "value_src": "constant"
+              },
+              "MEM_ECC": {
+                "value": "NONE",
+                "value_src": "constant"
+              },
+              "MEM_WIDTH": {
+                "value": "32",
+                "value_src": "constant"
+              },
+              "MEM_SIZE": {
+                "value": "32768",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en_1",
+                "direction": "O"
+              },
+              "DOUT": {
+                "physical_name": "bram_dout_1",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "DIN": {
+                "physical_name": "bram_din_1",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "WE": {
+                "physical_name": "bram_we_1",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr_1",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "CLK": {
+                "physical_name": "bram_clk_1",
+                "direction": "O"
+              },
+              "RST": {
+                "physical_name": "bram_rst_1",
+                "direction": "O"
+              }
+            }
+          },
+          "DATA_BRAM_PORT_2": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+            "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+            "parameters": {
+              "MASTER_TYPE": {
+                "value": "BRAM_CTRL",
+                "value_src": "constant"
+              },
+              "MEM_ECC": {
+                "value": "NONE",
+                "value_src": "constant"
+              },
+              "MEM_WIDTH": {
+                "value": "32",
+                "value_src": "constant"
+              },
+              "MEM_SIZE": {
+                "value": "32768",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en_2",
+                "direction": "O"
+              },
+              "DOUT": {
+                "physical_name": "bram_dout_2",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "DIN": {
+                "physical_name": "bram_din_2",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "WE": {
+                "physical_name": "bram_we_2",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr_2",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "CLK": {
+                "physical_name": "bram_clk_2",
+                "direction": "O"
+              },
+              "RST": {
+                "physical_name": "bram_rst_2",
+                "direction": "O"
+              }
+            }
+          },
+          "DATA_BRAM_PORT_3": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+            "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+            "parameters": {
+              "MASTER_TYPE": {
+                "value": "BRAM_CTRL",
+                "value_src": "constant"
+              },
+              "MEM_ECC": {
+                "value": "NONE",
+                "value_src": "constant"
+              },
+              "MEM_WIDTH": {
+                "value": "32",
+                "value_src": "constant"
+              },
+              "MEM_SIZE": {
+                "value": "32768",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en_3",
+                "direction": "O"
+              },
+              "DOUT": {
+                "physical_name": "bram_dout_3",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "DIN": {
+                "physical_name": "bram_din_3",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "WE": {
+                "physical_name": "bram_we_3",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr_3",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "CLK": {
+                "physical_name": "bram_clk_3",
+                "direction": "O"
+              },
+              "RST": {
+                "physical_name": "bram_rst_3",
+                "direction": "O"
+              }
+            }
+          },
+          "WEIGHT_BRAM_PORT_0": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+            "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+            "parameters": {
+              "MASTER_TYPE": {
+                "value": "BRAM_CTRL",
+                "value_src": "constant"
+              },
+              "MEM_ECC": {
+                "value": "NONE",
+                "value_src": "constant"
+              },
+              "MEM_WIDTH": {
+                "value": "32",
+                "value_src": "constant"
+              },
+              "MEM_SIZE": {
+                "value": "32768",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en_4",
+                "direction": "O"
+              },
+              "DOUT": {
+                "physical_name": "bram_dout_4",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "DIN": {
+                "physical_name": "bram_din_4",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "WE": {
+                "physical_name": "bram_we_4",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr_4",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "CLK": {
+                "physical_name": "bram_clk_4",
+                "direction": "O"
+              },
+              "RST": {
+                "physical_name": "bram_rst_4",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i_kernel_width": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_kernel_height": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_kernel_channel": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_control_signal": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "o_status_signal": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_test_sum": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dbg_bram_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dbg_bram_addr": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dbg_bram_en": {
+            "direction": "O"
+          },
+          "dbg_bram_rd_valid": {
+            "direction": "O"
+          },
+          "dbg_bram_rd_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "fish_box_core_0_DATA_BRAM_PORT_0": {
+        "interface_ports": [
+          "blk_mem_gen_0/BRAM_PORTA",
+          "fish_box_core_0/DATA_BRAM_PORT_0"
+        ]
+      },
+      "fish_box_core_0_DATA_BRAM_PORT_1": {
+        "interface_ports": [
+          "blk_mem_gen_1/BRAM_PORTA",
+          "fish_box_core_0/DATA_BRAM_PORT_1"
+        ]
+      },
+      "fish_box_core_0_DATA_BRAM_PORT_2": {
+        "interface_ports": [
+          "blk_mem_gen_2/BRAM_PORTA",
+          "fish_box_core_0/DATA_BRAM_PORT_2"
+        ]
+      },
+      "fish_box_core_0_DATA_BRAM_PORT_3": {
+        "interface_ports": [
+          "blk_mem_gen_3/BRAM_PORTA",
+          "fish_box_core_0/DATA_BRAM_PORT_3"
+        ]
+      },
+      "fish_box_core_0_WEIGHT_BRAM_PORT_0": {
+        "interface_ports": [
+          "blk_mem_gen_4/BRAM_PORTA",
+          "fish_box_core_0/WEIGHT_BRAM_PORT_0"
+        ]
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "fish_box_core_0/i_clk"
+        ]
+      },
+      "control_signal_1": {
+        "ports": [
+          "control_signal",
+          "fish_box_core_0/i_control_signal"
+        ]
+      },
+      "fish_box_core_0_dbg_bram_addr": {
+        "ports": [
+          "fish_box_core_0/dbg_bram_addr",
+          "dbg_bram_addr"
+        ]
+      },
+      "fish_box_core_0_dbg_bram_data": {
+        "ports": [
+          "fish_box_core_0/dbg_bram_data",
+          "dbg_bram_data"
+        ]
+      },
+      "fish_box_core_0_dbg_bram_en": {
+        "ports": [
+          "fish_box_core_0/dbg_bram_en",
+          "dbg_bram_en"
+        ]
+      },
+      "fish_box_core_0_dbg_bram_rd_data": {
+        "ports": [
+          "fish_box_core_0/dbg_bram_rd_data",
+          "dbg_bram_rd_data"
+        ]
+      },
+      "fish_box_core_0_dbg_bram_rd_valid": {
+        "ports": [
+          "fish_box_core_0/dbg_bram_rd_valid",
+          "dbg_bram_rd_valid"
+        ]
+      },
+      "fish_box_core_0_o_status_signal": {
+        "ports": [
+          "fish_box_core_0/o_status_signal",
+          "status_signal"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "fish_box_core_0/i_rst"
+        ]
+      }
+    }
+  }
+}

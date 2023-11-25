@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="deconv_multi_kernel_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="deconv_multi_kernel_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="209,681.710 ns"></ZoomStartTime>
+      <ZoomEndTime time="209,757.211 ns"></ZoomEndTime>
+      <Cursor1Time time="209,781.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="218"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/deconv_multi_kernel_tb/i_rst_n" type="logic">
+      <obj_property name="ElementShortName">i_rst_n</obj_property>
+      <obj_property name="ObjectShortName">i_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1545">
+      <obj_property name="label">feature controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/feature_bram_controller/rd_en_i" type="logic">
+      <obj_property name="ElementShortName">rd_en_i</obj_property>
+      <obj_property name="ObjectShortName">rd_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/feature_bram_controller/wr_en_i" type="logic">
+      <obj_property name="ElementShortName">wr_en_i</obj_property>
+      <obj_property name="ObjectShortName">wr_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/feature_bram_data_out" type="array">
+      <obj_property name="ElementShortName">feature_bram_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_bram_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1544">
+      <obj_property name="label">weight controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/weight_bram_controller/rd_en_i" type="logic">
+      <obj_property name="ElementShortName">rd_en_i</obj_property>
+      <obj_property name="ObjectShortName">rd_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/weight_bram_controller/wr_en_i" type="logic">
+      <obj_property name="ElementShortName">wr_en_i</obj_property>
+      <obj_property name="ObjectShortName">wr_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/weight_reader_data_out" type="array">
+      <obj_property name="ElementShortName">weight_reader_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_reader_data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider2520">
+      <obj_property name="label">Deconv_multi_kernel</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/op_top_enable_loadip" type="logic">
+      <obj_property name="ElementShortName">op_top_enable_loadip</obj_property>
+      <obj_property name="ObjectShortName">op_top_enable_loadip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/op_top_enable_loadw" type="logic">
+      <obj_property name="ElementShortName">op_top_enable_loadw</obj_property>
+      <obj_property name="ObjectShortName">op_top_enable_loadw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_export_done" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_export_done</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_export_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_inst_0/cnt_concat" type="array">
+      <obj_property name="ElementShortName">cnt_concat[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_concat[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider2431">
+      <obj_property name="label">Deconv_op_top_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[0].deconv_op_top_inst /i_weight_col" type="array">
+      <obj_property name="ElementShortName">i_weight_col[47:0]</obj_property>
+      <obj_property name="ObjectShortName">i_weight_col[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[0].deconv_op_top_inst /i_feature_map_col" type="array">
+      <obj_property name="ElementShortName">i_feature_map_col[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_feature_map_col[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[0].deconv_op_top_inst /o_cmpl_deconv_col" type="array">
+      <obj_property name="ElementShortName">o_cmpl_deconv_col[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_cmpl_deconv_col[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[0].deconv_op_top_inst /o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider4809">
+      <obj_property name="label">Deconv_op_top_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[1].deconv_op_top_inst /i_weight_col" type="array">
+      <obj_property name="ElementShortName">i_weight_col[47:0]</obj_property>
+      <obj_property name="ObjectShortName">i_weight_col[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[1].deconv_op_top_inst /i_feature_map_col" type="array">
+      <obj_property name="ElementShortName">i_feature_map_col[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_feature_map_col[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[1].deconv_op_top_inst /o_cmpl_deconv_col" type="array">
+      <obj_property name="ElementShortName">o_cmpl_deconv_col[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_cmpl_deconv_col[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/\genblk1[1].deconv_op_top_inst /o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider4814">
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_inst_0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_inst_0/s_empty" type="logic">
+      <obj_property name="ElementShortName">s_empty</obj_property>
+      <obj_property name="ObjectShortName">s_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_inst_0/wr_pt" type="array">
+      <obj_property name="ElementShortName">wr_pt[16:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_pt[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_multi_kernel_tb/deconv_multi_kernel_0/weight_fifo_inst_0/rd_pt" type="array">
+      <obj_property name="ElementShortName">rd_pt[16:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_pt[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

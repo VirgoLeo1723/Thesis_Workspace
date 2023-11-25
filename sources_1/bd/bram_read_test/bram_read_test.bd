@@ -1,0 +1,167 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1137049211370492",
+      "device": "xck26-sfvc784-2LV-c",
+      "gen_directory": "../../../../overall_dataflow.gen/sources_1/bd/bram_read_test",
+      "name": "bram_read_test",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "bram_reader_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "en": {
+        "direction": "I"
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "valid": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "bram_read_test_blk_mem_gen_0_0",
+        "xci_path": "ip\\bram_read_test_blk_mem_gen_0_0\\bram_read_test_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "data_bram.coe"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "bram_reader_0": {
+        "vlnv": "xilinx.com:module_ref:bram_reader:1.0",
+        "xci_name": "bram_read_test_bram_reader_0_0",
+        "xci_path": "ip\\bram_read_test_bram_reader_0_0\\bram_read_test_bram_reader_0_0.xci",
+        "inst_hier_path": "bram_reader_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bram_reader",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "bram": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:user:bram_control_inf:1.0",
+            "vlnv": "xilinx.com:user:bram_control_inf_rtl:1.0",
+            "port_maps": {
+              "EN": {
+                "physical_name": "bram_en",
+                "direction": "O"
+              },
+              "WE": {
+                "physical_name": "bram_we",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "ADDR": {
+                "physical_name": "bram_addr",
+                "direction": "O",
+                "left": "12",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "ports": {
+          "clk_i": {
+            "direction": "I"
+          },
+          "rst_i": {
+            "direction": "I"
+          },
+          "en_i": {
+            "direction": "I"
+          },
+          "data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "valid_o": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "bram_reader_0/data_i"
+        ]
+      },
+      "bram_reader_0_bram_addr_in": {
+        "ports": [
+          "bram_reader_0/bram_addr",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "bram_reader_0_bram_en": {
+        "ports": [
+          "bram_reader_0/bram_en",
+          "blk_mem_gen_0/ena"
+        ]
+      },
+      "bram_reader_0_data_o": {
+        "ports": [
+          "bram_reader_0/data_o",
+          "data_out"
+        ]
+      },
+      "bram_reader_0_valid_o": {
+        "ports": [
+          "bram_reader_0/valid_o",
+          "valid"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "blk_mem_gen_0/clka",
+          "bram_reader_0/clk_i"
+        ]
+      },
+      "en_1": {
+        "ports": [
+          "en",
+          "bram_reader_0/en_i"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "bram_reader_0/rst_i"
+        ]
+      }
+    }
+  }
+}

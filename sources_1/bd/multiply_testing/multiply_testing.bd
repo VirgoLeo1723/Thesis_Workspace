@@ -1,0 +1,83 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x93817CF7B8BB5B18",
+      "device": "xck26-sfvc784-2LV-c",
+      "gen_directory": "../../../../overall_dataflow.gen/sources_1/bd/multiply_testing",
+      "name": "multiply_testing",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mult_gen_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I",
+        "left": "17",
+        "right": "0"
+      },
+      "B": {
+        "direction": "I",
+        "left": "17",
+        "right": "0"
+      },
+      "P": {
+        "direction": "O",
+        "left": "35",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+              "{} maximum {}} value 36} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+              "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 36",
+              "}"
+            ],
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "CLK": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "multiply_testing_mult_gen_0_0",
+        "xci_path": "ip\\multiply_testing_mult_gen_0_0\\multiply_testing_mult_gen_0_0.xci",
+        "inst_hier_path": "mult_gen_0"
+      }
+    },
+    "nets": {
+      "A_1": {
+        "ports": [
+          "A",
+          "mult_gen_0/A"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "mult_gen_0/B"
+        ]
+      },
+      "CLK_1": {
+        "ports": [
+          "CLK",
+          "mult_gen_0/CLK"
+        ]
+      },
+      "mult_gen_0_P": {
+        "ports": [
+          "mult_gen_0/P",
+          "P"
+        ]
+      }
+    }
+  }
+}

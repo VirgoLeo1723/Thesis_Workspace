@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="deconv_op_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="deconv_op_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="435.501 ns"></ZoomEndTime>
+      <Cursor1Time time="424.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="286"></NameColumnWidth>
+      <ValueColumnWidth column_width="139"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="43" />
+   <wvobject fp_name="/deconv_op_top_tb/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/i_rst_n" type="logic">
+      <obj_property name="ElementShortName">i_rst_n</obj_property>
+      <obj_property name="ObjectShortName">i_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider333">
+      <obj_property name="label">Weight_FIfo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_out" type="array">
+      <obj_property name="ElementShortName">weight_fifo_out[47:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_out[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_full" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_flush" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_flush</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_export_done" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_export_done</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_export_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_loop" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_loop</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_loop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/deconv_op_top_inst_0/u_deconv_eachcol/kernel_column_id" type="array">
+      <obj_property name="ElementShortName">kernel_column_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_column_id[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/deconv_op_top_inst_0/u_deconv_eachcol/input_column_id" type="array">
+      <obj_property name="ElementShortName">input_column_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input_column_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_wr_en" type="logic">
+      <obj_property name="ElementShortName">weight_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">weight_fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/ram" type="array">
+      <obj_property name="ElementShortName">ram[0:8][15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:8][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/wr_pt" type="array">
+      <obj_property name="ElementShortName">wr_pt[16:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_pt[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/cnt_concat" type="array">
+      <obj_property name="ElementShortName">cnt_concat[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_concat[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/re_fifo" type="logic">
+      <obj_property name="ElementShortName">re_fifo</obj_property>
+      <obj_property name="ObjectShortName">re_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/s_empty" type="logic">
+      <obj_property name="ElementShortName">s_empty</obj_property>
+      <obj_property name="ObjectShortName">s_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_fifo_inst_0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1234">
+      <obj_property name="label">deconv_op_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_enable_loadip" type="logic">
+      <obj_property name="ElementShortName">op_top_enable_loadip</obj_property>
+      <obj_property name="ObjectShortName">op_top_enable_loadip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_enable_loadw" type="logic">
+      <obj_property name="ElementShortName">op_top_enable_loadw</obj_property>
+      <obj_property name="ObjectShortName">op_top_enable_loadw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_feature_map_col" type="array">
+      <obj_property name="ElementShortName">op_top_feature_map_col[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op_top_feature_map_col[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_weight_col" type="array">
+      <obj_property name="ElementShortName">op_top_weight_col[47:0]</obj_property>
+      <obj_property name="ObjectShortName">op_top_weight_col[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_cmpl_deconv_col" type="array">
+      <obj_property name="ElementShortName">op_top_cmpl_deconv_col[127:0]</obj_property>
+      <obj_property name="ObjectShortName">op_top_cmpl_deconv_col[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/op_top_valid" type="logic">
+      <obj_property name="ElementShortName">op_top_valid</obj_property>
+      <obj_property name="ObjectShortName">op_top_valid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider87">
+      <obj_property name="label">loadip_buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider587">
+      <obj_property name="label">read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_rd_ready" type="logic">
+      <obj_property name="ElementShortName">feature_rd_ready</obj_property>
+      <obj_property name="ObjectShortName">feature_rd_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_rd_activate" type="logic">
+      <obj_property name="ElementShortName">feature_rd_activate</obj_property>
+      <obj_property name="ObjectShortName">feature_rd_activate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_rd_strobe" type="logic">
+      <obj_property name="ElementShortName">feature_rd_strobe</obj_property>
+      <obj_property name="ObjectShortName">feature_rd_strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_rd_data_pix" type="array">
+      <obj_property name="ElementShortName">feature_rd_data_pix[15:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_rd_data_pix[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/rd_count" type="array">
+      <obj_property name="ElementShortName">rd_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_rd_cnt" type="array">
+      <obj_property name="ElementShortName">feature_rd_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_rd_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_wr_activate" type="array">
+      <obj_property name="ElementShortName">feature_wr_activate[1:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_wr_activate[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/feature_wr_fifo_size" type="array">
+      <obj_property name="ElementShortName">feature_wr_fifo_size[15:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_wr_fifo_size[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider107">
+      <obj_property name="label">weight_reader</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/data_o" type="array">
+      <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/valid_o" type="logic">
+      <obj_property name="ElementShortName">valid_o</obj_property>
+      <obj_property name="ObjectShortName">valid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/bram_data" type="array">
+      <obj_property name="ElementShortName">bram_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/bram_addr" type="array">
+      <obj_property name="ElementShortName">bram_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/bram_en" type="logic">
+      <obj_property name="ElementShortName">bram_en</obj_property>
+      <obj_property name="ObjectShortName">bram_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/masking_counter" type="array">
+      <obj_property name="ElementShortName">masking_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">masking_counter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deconv_op_top_tb/weight_loader/en_i" type="logic">
+      <obj_property name="ElementShortName">en_i</obj_property>
+      <obj_property name="ObjectShortName">en_i</obj_property>
+   </wvobject>
+</wave_config>

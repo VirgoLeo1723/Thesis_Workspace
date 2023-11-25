@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.586207",
+   "Default View_TopLeft":"-186,157",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -20 -y 300 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -20 -y 320 -defaultsOSRD
+preplace port port-id_dbg_bram_rd_valid -pg 1 -lvl 3 -x 720 -y 560 -defaultsOSRD
+preplace port port-id_dbg_bram_en -pg 1 -lvl 0 -x -20 -y 240 -defaultsOSRD -left
+preplace portBus dbg_bram_data -pg 1 -lvl 3 -x 720 -y 540 -defaultsOSRD
+preplace portBus dbg_bram_rd_data -pg 1 -lvl 3 -x 720 -y 580 -defaultsOSRD
+preplace portBus dbg_bram_addr -pg 1 -lvl 0 -x -20 -y 260 -defaultsOSRD -left
+preplace portBus control_signal -pg 1 -lvl 0 -x -20 -y 400 -defaultsOSRD
+preplace portBus status_signal -pg 1 -lvl 3 -x 720 -y 520 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 600 -y 60 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 2 -x 600 -y 160 -defaultsOSRD
+preplace inst blk_mem_gen_2 -pg 1 -lvl 2 -x 600 -y 260 -defaultsOSRD
+preplace inst blk_mem_gen_3 -pg 1 -lvl 2 -x 600 -y 360 -defaultsOSRD
+preplace inst blk_mem_gen_4 -pg 1 -lvl 2 -x 600 -y 460 -defaultsOSRD
+preplace inst fish_box_core_0 -pg 1 -lvl 1 -x 230 -y 310 -defaultsOSRD
+preplace netloc clk_1 1 0 1 10J 260n
+preplace netloc control_signal_1 1 0 1 10J 360n
+preplace netloc fish_box_core_0_dbg_bram_addr 1 0 2 0J 130 450
+preplace netloc fish_box_core_0_dbg_bram_data 1 1 2 460J 540 NJ
+preplace netloc fish_box_core_0_dbg_bram_en 1 0 2 10J 140 440
+preplace netloc fish_box_core_0_dbg_bram_rd_data 1 1 2 440J 580 NJ
+preplace netloc fish_box_core_0_dbg_bram_rd_valid 1 1 2 450J 560 NJ
+preplace netloc fish_box_core_0_o_status_signal 1 1 2 470J 520 NJ
+preplace netloc rst_1 1 0 1 20J 280n
+preplace netloc fish_box_core_0_DATA_BRAM_PORT_0 1 1 1 490J 60n
+preplace netloc fish_box_core_0_DATA_BRAM_PORT_1 1 1 1 500J 160n
+preplace netloc fish_box_core_0_DATA_BRAM_PORT_2 1 1 1 500J 240n
+preplace netloc fish_box_core_0_DATA_BRAM_PORT_3 1 1 1 490J 260n
+preplace netloc fish_box_core_0_WEIGHT_BRAM_PORT_0 1 1 1 480J 280n
+levelinfo -pg 1 -20 230 600 720
+pagesize -pg 1 -db -bbox -sgen -210 0 930 600
+"
+}
+0
